@@ -2,17 +2,12 @@ package main
 
 import (
 	"fmt"
-	"math/rand"
-	"time"
+	"hello/sorteio"
 )
 
-func sorteio(min, max int) int {
-	rand.Seed(time.Now().UTC().UnixNano())
-	return rand.Intn(max-min) + min
-}
-
 func main() {
-
-	fmt.Println("Numero da sorte", sorteio(1, 100))
-
+	
+	for i:=1 ;i<10 ;i++  {
+		fmt.Println("Numero da sorte", sorteio.Randomico(1, 100))
+	}
 }
